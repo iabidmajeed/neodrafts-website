@@ -1120,10 +1120,12 @@ body {
   .section5-content {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 37px;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: column;
+    text-align: center;
   }
   #site-footer {
-    margin-top: 20vw;
+    margin-top: 26vw;
   }
 }
