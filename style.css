@@ -27,12 +27,6 @@ body {
   box-sizing: border-box;
   width: 100%;
 }
-#main {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
 #mobile-header,
 #full {
   display: none; /* hide by default on desktop */
@@ -669,6 +663,9 @@ nav button {
 #footer-copyright p {
   font-size: 1.2vw;
   font-weight: 400;
+}
+#footer-copyright p a {
+  color: #b9ff66;
 }
 #privacypage {
   display: flex;
