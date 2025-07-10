@@ -1043,3 +1043,69 @@ nav button {
     gap: 10px;
   }
 }
+
+/* Add mobile-specific overflow handling */
+@media (max-width: 768px) {
+  html,
+  body {
+    overflow: auto; /* Allow normal scrolling on mobile */
+    height: auto;
+    min-height: 100vh;
+  }
+
+  #main {
+    overflow: visible !important; /* Override Locomotive Scroll's overflow settings */
+  }
+
+  /* Ensure sections can scroll naturally */
+  .section1,
+  #section2,
+  #section3,
+  #section4,
+  #section5 {
+    overflow: visible;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Grotesk", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Fix for mobile touch scrolling */
+@media (max-width: 768px) {
+  body {
+    overflow-y: auto; /* Enable vertical scrolling */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  }
+}
+
+/* Additional mobile fixes */
+@media (max-width: 768px) {
+  /* Ensure all sections have proper height */
+  .section1 {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  #section2,
+  #section3,
+  #section4,
+  #section5 {
+    height: auto;
+    min-height: auto;
+  }
+
+  /* Fix for potential positioning issues */
+  #cursor {
+    display: none; /* Hide custom cursor on mobile */
+  }
+}
