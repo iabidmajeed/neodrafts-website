@@ -1093,7 +1093,7 @@ body {
   /* Ensure all sections have proper height */
   .section1 {
     height: auto;
-    min-height: 100vh;
+    min-height: 83vh;
   }
 
   #section2,
@@ -1107,5 +1107,23 @@ body {
   /* Fix for potential positioning issues */
   #cursor {
     display: none; /* Hide custom cursor on mobile */
+  }
+  #footer-top-container {
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    padding: 0px 13px;
+    padding-top: 30px;
+    border-radius: 60px 60px 0px 0px;
+    position: relative;
+  }
+  .section5-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 37px;
+  }
+  #site-footer {
+    margin-top: 20vw;
   }
 }
